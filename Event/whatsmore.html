@@ -1,0 +1,343 @@
+<html>
+<head>
+<title>Website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("img").mouseenter(function(){
+$(this).animate({
+opacity: '0.5',
+height: '350px',
+width: '350px'
+});
+});
+$("img").mouseleave(function(){
+$(this).animate({
+opacity: '1',
+height: '300px',
+width: '300px'
+});
+});
+});
+</script>
+<style>
+		/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: grey;
+	position:sticky;
+	position: -webkit--sticky;
+	top:0;
+	margin : 20px ; 
+	padding : 0 ;
+	width: 4000px;
+	
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 15px 20px;
+    text-decoration: none;
+	font-size:25px;
+	/*font-weight: bold;*/
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+	height: 40px;
+}
+
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #111111;
+    color: white;
+}
+			
+div.gallery {
+margin: 20px;
+border: 1px solid #ccc;
+float: left;
+}
+div.gallery:hover {
+border: 1px solid #777;
+}
+div.gallery img {
+width: 300;
+height: 300;
+}
+div.desc {
+padding: 10px;
+text-align: center;
+font-size:20px;
+color: white;
+}
+.dropbtn {
+background-color: orange;
+color: white;
+padding: 19px;
+font-size: 20px;
+border: none;
+cursor: pointer;
+}
+.dropdown {
+position:sticky;
+position: -webkit--sticky;
+top:0;
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+right: 0;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #111111;}
+</style>
+</head>
+<body background="ten3.jpg">
+
+  <div class="navbar">
+<a href="trial.html"><img src="logo.png" style="height:50px;width:50px;"></a>
+<a href="#1" data-toggle="modal">About Us</a>
+<a href="#signup" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+<a href="#signin" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> SIGN IN</a>
+</div>
+
+<div class="modal fade" id="1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h2 class="modal-title">About Us</h2>
+        </div>
+        <div class="modal-body">
+         <div class="contact">
+<div class="container">
+<p style="color:hotpink;">Let's know about different culture</p>
+<p>A cuisine is specific set of cooking traditions and practices, often associated with a specific culture or region. 
+Each cuisine involves food <br>preparation in a particular style, of food and drink of particular types,
+ to produce individually consumed items or distinct meals.
+Tasty Shop <br>with some pretty cool and different recipes, that look delicious! Aside from that, 
+you can purchase their products.</p>
+<h2><i>Cooking made delightfully simple with everyday ingredients!</i></h2>
+
+ 
+</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+    <div id="signup" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-body">
+            <center><h3>SIGN UP</h3>ALREADY REGISTERED? <a href="#signin" style="color: silver;">SIGN IN</a></center>
+            <form action="home.html">
+                <br>
+                <div class="row">
+             <div class="col-xs-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="FIRST NAME" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="LAST NAME" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="EMAIL" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="PASSWORD" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" placeholder="MOBILE" required>
+                </div>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">MALE
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">FEMALE
+                </label><br>
+                <button type="submit" class="btn btn-default" style="width: 450px;background-color: #4A4444;color: white;">SIGN UP</button></div>
+                <div class="col-xs-1">
+                    <center><div style="height:150px;width: 1px;background-color: silver;"></div></center>
+                    <p style="margin-left: 10px;">OR</p>
+                    <center><div style="height:150px;width: 1px;background-color: silver;"></div></center>
+                </div>
+                <div class="col-xs-5" style="margin-top: 50px;">
+                    <div class="input-group-btn">
+                        <center>
+                            <a href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><button class="btn btn-danger btn-lg" type="button">
+                                <i class="fa fa-google-plus"></i> SIGN UP WITH GOOGLE
+                            </button></a>
+                        </center>
+                    </div><br><br>
+                    <div class="input-group-btn">
+                        <center>
+                            <a href="https://www.facebook.com/" target="_blank"><button type="button" class="btn btn-info btn-lg" style="background-color: navy;" >
+                                <i class="fa fa-facebook"></i> SIGN UP WITH FACEBOOK
+                            </button></a>
+                        </center>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+  </div>
+  </div>
+    <div id="signin" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <center><h3>SIGN IN</h3>NOT REGISTERED? <a href="#signup" style="color: silver;">SIGN UP</a></center><br><br>
+                    <form action="home.html">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div id="hide">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="EMAIL" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="PASSWORD" required>
+                                </div>
+                                <p style="margin-left: 260px;" id="forgot">FORGOT PASSWORD?</p><br>
+                                <button type="submit" class="btn btn-default" style="width: 450px;background-color: #4A4444;color: white;">SIGN IN</button></div>
+                                <div id="show" style="display: none;">
+                                    <center>
+                                        <h4>FORGOT PASSWORD?</h4>
+                                        <p>Enter your email address and we will send you a link to reset your password.</p>
+                                    </center>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="EMAIL" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-default btn-lg" style="width: 250px;background-color: #4A4444;color: white;">EMAIL RESET LINK</button> <button type="reset" style="width: 130px;" class="btn btn-lg">CANCEL</button> 
+                                </div>
+                            </div>
+                            <div class="col-xs-1">
+                                <center><div style="height:70px;width: 1px;background-color: silver;"></div></center>
+                                <p style="margin-left: 10px;">OR</p>
+                                <center><div style="height:70px;width: 1px;background-color: silver;"></div></center>
+                            </div>
+                            <div class="col-xs-5" style="margin-top: 20px;">
+                                <div class="input-group-btn">
+                                    <center>
+                                        <a href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">
+                                            <button class="btn btn-danger btn-lg" type="button">
+                                                <i class="fa fa-google-plus"></i> SIGN IN WITH GOOGLE
+                                            </button>
+                                        </a>
+                                    </center>
+                                </div><br>
+                                <div class="input-group-btn">
+                                    <center>
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <button type="button" class="btn btn-info btn-lg" style="background-color: navy;" >
+                                                <i class="fa fa-facebook"></i> SIGN IN WITH FACEBOOK
+                                            </button>
+                                        </a>
+                                    </center>
+                                 </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<center>
+<div style="width: 100%; height: 5%; color: white; font-size: 250%; font-weight: bolder; text-align: center;" id="cuisine">Today's Special
+<a href="#d1" class="btn btn-primary">Food Near You <span class="badge"></span></a></div><br>
+</center>
+<div class="gallery">
+  <a target="_blank" href="buyform.html">
+    <img src="one.jpg">
+  </a>
+  <div class="desc">@ Rs. 450</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="buyform.html">
+    <img src="two.jpg">
+  </a>
+  <div class="desc">@ Rs. 400</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="buyform.html">
+    <img src="three.jpg">
+  </a>
+  <div class="desc">@ Rs. 450</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="buyform.html">
+    <img src="spanish3.jpg">
+  </a>
+  <div class="desc">@ Rs. 300</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="buyform.html">
+    <img src="indian3.jpg">
+  </a>
+  <div class="desc">@ Rs. 300</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="buyform.html">
+    <img src="italian2.jpg">
+  </a>
+  <div class="desc">@ Rs. 350</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="buyform.html">
+    <img src="italian4.jpg">
+  </a>
+  <div class="desc">@ Rs. 300</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="buyform.html">
+    <img src="japan3.jpg">
+  </a>
+  <div class="desc">@ Rs. 250</div>
+</div>
+
+script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+<div id="d1" style="position:absolute;left:330px;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55015.77415286168!2d76.55881425170314!3d30.478996893478197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fdc7c202e6489%3A0xf2b1d67562f68349!2sRajpura%2C+Punjab+140401!5e0!3m2!1sen!2sin!4v1540277366888" width="900" height="650" frameborder="0" style="border:0" allowfullscreen>
+</iframe>
+</div>
+
+</center>
+</body>
+</html>

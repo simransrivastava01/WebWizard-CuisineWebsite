@@ -1,0 +1,384 @@
+<html>
+   <head>
+<title>Website</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>	
+			
+		/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: grey;
+	position:sticky;
+	position: -webkit--sticky;
+	top:0;
+	margin : 20px ; 
+	padding : 0 ;
+	width: 4000px;
+	
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 15px 20px;
+    text-decoration: none;
+	font-size:25px;
+	/*font-weight: bold;*/
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+	height: 40px;
+}
+
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #111111;
+    color: white;
+}
+			
+			
+			 * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            /* Float four columns side by side */
+            .column {
+              float: left;
+              width: 25%;
+              padding: 0 10px;
+            }
+            
+            /* Remove extra left and right margins, due to padding */
+            .row {margin: 0 -5px;}
+            
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            /* Responsive columns */
+            @media screen and (max-width: 600px) {
+              .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+              }
+            }
+            
+            /* Style the counter cards */
+            .card {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+              padding: 16px;
+              text-align: center;
+              background-color: #f1f1f1;
+            }
+</style>
+</head>
+
+   <body background="ten3.jpg" style="height:90%;">
+   <div class="navbar">
+<a href="trial.html"><img src="logo.png" style="height:50px;width:50px;"></a>
+<a href="#1" data-toggle="modal">About Us</a>
+<a href="#signup" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+<a href="#signin" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> SIGN IN</a>
+<a href="whatsmore.html"><span class="glyphicon glyphicon-heart"></span> What's More</a>
+</div>
+
+
+<div class="modal fade" id="1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h2 class="modal-title">About Us</h2>
+        </div>
+        <div class="modal-body">
+         <div class="contact">
+<div class="container">
+<p style="color:hotpink;">Let's know about different culture</p>
+<p>A cuisine is specific set of cooking traditions and practices, often associated with a specific culture or region. 
+Each cuisine involves food <br>preparation in a particular style, of food and drink of particular types,
+ to produce individually consumed items or distinct meals.
+Tasty Shop <br>with some pretty cool and different recipes, that look delicious! Aside from that, 
+you can purchase their products.</p>
+<h2><i>Cooking made delightfully simple with everyday ingredients!</i></h2>
+
+ 
+</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+    <div id="signup" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-body">
+            <center><h3>SIGN UP</h3>ALREADY REGISTERED? <a href="#signin" style="color: silver;">SIGN IN</a></center>
+            <form action="home.html">
+                <br>
+                <div class="row">
+             <div class="col-xs-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="FIRST NAME" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="LAST NAME" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="EMAIL" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="PASSWORD" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" placeholder="MOBILE" required>
+                </div>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">MALE
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">FEMALE
+                </label><br>
+                <button type="submit" class="btn btn-default" style="width: 450px;background-color: #4A4444;color: white;">SIGN UP</button></div>
+                <div class="col-xs-1">
+                    <center><div style="height:150px;width: 1px;background-color: silver;"></div></center>
+                    <p style="margin-left: 10px;">OR</p>
+                    <center><div style="height:150px;width: 1px;background-color: silver;"></div></center>
+                </div>
+                <div class="col-xs-5" style="margin-top: 50px;">
+                    <div class="input-group-btn">
+                        <center>
+                            <a href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><button class="btn btn-danger btn-lg" type="button">
+                                <i class="fa fa-google-plus"></i> SIGN UP WITH GOOGLE
+                            </button></a>
+                        </center>
+                    </div><br><br>
+                    <div class="input-group-btn">
+                        <center>
+                            <a href="https://www.facebook.com/" target="_blank"><button type="button" class="btn btn-info btn-lg" style="background-color: navy;" >
+                                <i class="fa fa-facebook"></i> SIGN UP WITH FACEBOOK
+                            </button></a>
+                        </center>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+  </div>
+  </div>
+    <div id="signin" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <center><h3>SIGN IN</h3>NOT REGISTERED? <a href="#signup" style="color: silver;">SIGN UP</a></center><br><br>
+                    <form action="home.html">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div id="hide">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="EMAIL" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="PASSWORD" required>
+                                </div>
+                                <p style="margin-left: 260px;" id="forgot">FORGOT PASSWORD?</p><br>
+                                <button type="submit" class="btn btn-default" style="width: 450px;background-color: #4A4444;color: white;">SIGN IN</button></div>
+                                <div id="show" style="display: none;">
+                                    <center>
+                                        <h4>FORGOT PASSWORD?</h4>
+                                        <p>Enter your email address and we will send you a link to reset your password.</p>
+                                    </center>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="EMAIL" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-default btn-lg" style="width: 250px;background-color: #4A4444;color: white;">EMAIL RESET LINK</button> <button type="reset" style="width: 130px;" class="btn btn-lg">CANCEL</button> 
+                                </div>
+                            </div>
+                            <div class="col-xs-1">
+                                <center><div style="height:70px;width: 1px;background-color: silver;"></div></center>
+                                <p style="margin-left: 10px;">OR</p>
+                                <center><div style="height:70px;width: 1px;background-color: silver;"></div></center>
+                            </div>
+                            <div class="col-xs-5" style="margin-top: 20px;">
+                                <div class="input-group-btn">
+                                    <center>
+                                        <a href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">
+                                            <button class="btn btn-danger btn-lg" type="button">
+                                                <i class="fa fa-google-plus"></i> SIGN IN WITH GOOGLE
+                                            </button>
+                                        </a>
+                                    </center>
+                                </div><br>
+                                <div class="input-group-btn">
+                                    <center>
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <button type="button" class="btn btn-info btn-lg" style="background-color: navy;" >
+                                                <i class="fa fa-facebook"></i> SIGN IN WITH FACEBOOK
+                                            </button>
+                                        </a>
+                                    </center>
+                                 </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+        <div style="text-align: center; ">
+           <div style="font-size: 300%; font-weight: bolder; color: white;"> Japanese cuisine</div>
+        <img style="width: 50%; height: 50%;" src="japan2.jpg" alt="india"/>
+        </div>
+		
+		<br>
+		
+		   <div class="column">
+              <div class="card" style="width:1550px;height:650px;">
+			  <div class="card-body"> 
+			  
+          <!div class="row">
+		  <center>
+		  <table>
+		  <tr>
+		  <td>
+            <div class="column">
+              <div class="card" style="width:400px">
+                <!-- <div class="card" style="width:400px"> -->
+                    <img class="card-img-top" src="japan.jpg" alt="Card image" style="width:100%; height: 20%;">
+                    <div class="card-body">
+                    <!-- </div> -->
+                  </div>
+              </div>
+            </div>
+			</td>
+			
+          <td>
+            <div class="column">
+              <div class="card" style="width:400px">
+                <!-- <div class="card" style="width:400px"> -->
+                    <div class="card-body">
+                      <p>Japanese cuisine encompasses the regional and traditional foods of Japan, which have developed through 
+            centuries of political, economic, and social changes.The traditional cuisine of Japan, washoku, lit. 
+            "Japanese eating" , is based on rice with miso soup and other dishes; there is an emphasis on seasonal ingredients. 
+            Side dishes often consist of fish, pickled vegetables, and vegetables cooked in broth. </p>
+                    <!-- </div> -->
+                  </div>
+              </div>
+            </div>
+			</td>
+			
+			
+			<td>
+            <div class="column">
+              <div class="card" style="width:400px">
+                <!-- <div class="card" style="width:400px"> -->
+                    <img class="card-img-top" src="japan3.jpg" alt="Card image" style="width:100%; height: 50%;">
+                    <div class="card-body">
+                    <!-- </div> -->
+                  </div>
+              </div>
+            </div>
+			</td>
+			
+			</tr>
+			
+            <tr>
+			
+			 <td>
+            <div class="column">
+              <div class="card" style="width:400px">
+                <!-- <div class="card" style="width:400px"> -->
+                    <div class="card-body">
+                      <p> Apart from rice, staples include noodles, such as soba and udon.Japan also has many 
+            simmered dishes such as fish products in broth called oden, or beef in sukiyaki and nikujaga.
+            Historically influenced by Chinese cuisine, Japanese cuisine has opened up to influence from Western cuisines in
+            the modern era.Seafood is common, 
+            often grilled, but also served raw as sashimi or in sushi. Seafood and vegetables are also deep-fried in a 
+            light batter, as tempura. 
+            </p>
+                    <!-- </div> -->
+                  </div>
+              </div>
+            </div>
+			</td>
+			
+			
+			
+			<td>
+            <div class="column">
+              <div class="card" style="width:400px">
+                <!-- <div class="card" style="width:400px;"> -->
+                    <img class="card-img-top" src="japan4.jpg" alt="Card image" style="width:100%; height: 45%;">
+                    <div class="card-body">
+                    <!-- </div> -->
+                  </div>
+              </div>
+            </div>
+			</td>
+			
+			 <td>
+            <div class="column">
+              <div class="card" style="width:400px">
+                <!-- <div class="card" style="width:400px"> -->
+                    <div class="card-body">
+                      <p>Dishes inspired by foreign food—in particular Chinese food—like ramen and gyōza, as well as foods 
+            like spaghetti, curry, and hamburgers have become adopted with variants for Japanese tastes and ingredients. 
+            Traditionally, the Japanese shunned meat due to Buddhism, but with the modernization of Japan in the 1880s, 
+            meat-based dishes such as tonkatsu and yakiniku have become common. Japanese cuisine, particularly sushi, 
+            has become popular throughout the world. </p>
+                    <!-- </div> -->
+                  </div>
+              </div>
+            </div>
+			</td>
+			
+			</tr>
+			
+			</table>
+			</center>
+			    </div>
+              </div>
+            </div>
+		
+		
+		
+       
+    </body>
+</html>

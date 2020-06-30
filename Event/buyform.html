@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Buyform</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  
+
+<style>
+ul.head{
+	width=100%;
+	position:sticky;
+	position: -webkit--sticky;
+	top:0;
+	list-style-type: none;
+	margin : 20px ; 
+	padding : 0 ;
+	overflow : hidden;
+	background-color : orange;
+	}
+li
+{
+	float : left;
+	}
+li a {
+	display : block;
+	font-size : 25px;
+	color: white;
+	text-align : center;
+	padding : 15px;
+	text-decoration : none;
+	}
+li a: hover{
+	background-color: #111111;
+	}
+			
+		/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: grey;
+	position:sticky;
+	position: -webkit--sticky;
+	top:0;
+	margin : 20px ; 
+	padding : 0 ;
+	width: 4000px;
+	
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 15px 20px;
+    text-decoration: none;
+	font-size:25px;
+	/*font-weight: bold;*/
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+	height: 40px;
+}
+
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #111111;
+    color: white;
+}
+
+</style>
+</head>
+
+<body background="ten3.jpg">
+
+<div class="navbar">
+<a href="trial.html"><img src="logo.png" style="height:50px;width:50px;"></a>
+<a href="#1" data-toggle="modal">About Us</a>
+<a href="#signup" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+<a href="#signin" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> SIGN IN</a>
+<a href="whatsmore.html"><span class="glyphicon glyphicon-heart"></span> What's More</a>
+</div>
+
+<div class="modal fade" id="1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h2 class="modal-title">About Us</h2>
+        </div>
+        <div class="modal-body">
+         <div class="contact">
+<div class="container">
+<p style="color:hotpink;">Let's know about different culture</p>
+<p>A cuisine is specific set of cooking traditions and practices, often associated with a specific culture or region. 
+Each cuisine involves food <br>preparation in a particular style, of food and drink of particular types,
+ to produce individually consumed items or distinct meals.
+Tasty Shop <br>with some pretty cool and different recipes, that look delicious! Aside from that, 
+you can purchase their products.</p>
+<h2><i>Cooking made delightfully simple with everyday ingredients!</i></h2>
+
+ 
+</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+    <div id="signup" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-body">
+            <center><h3>SIGN UP</h3>ALREADY REGISTERED? <a href="#signin" style="color: silver;">SIGN IN</a></center>
+            <form action="home.html">
+                <br>
+                <div class="row">
+             <div class="col-xs-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="FIRST NAME" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="LAST NAME" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="EMAIL" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="PASSWORD" required>
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" placeholder="MOBILE" required>
+                </div>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">MALE
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">FEMALE
+                </label><br>
+                <button type="submit" class="btn btn-default" style="width: 450px;background-color: #4A4444;color: white;">SIGN UP</button></div>
+                <div class="col-xs-1">
+                    <center><div style="height:150px;width: 1px;background-color: silver;"></div></center>
+                    <p style="margin-left: 10px;">OR</p>
+                    <center><div style="height:150px;width: 1px;background-color: silver;"></div></center>
+                </div>
+                <div class="col-xs-5" style="margin-top: 50px;">
+                    <div class="input-group-btn">
+                        <center>
+                            <a href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><button class="btn btn-danger btn-lg" type="button">
+                                <i class="fa fa-google-plus"></i> SIGN UP WITH GOOGLE
+                            </button></a>
+                        </center>
+                    </div><br><br>
+                    <div class="input-group-btn">
+                        <center>
+                            <a href="https://www.facebook.com/" target="_blank"><button type="button" class="btn btn-info btn-lg" style="background-color: navy;" >
+                                <i class="fa fa-facebook"></i> SIGN UP WITH FACEBOOK
+                            </button></a>
+                        </center>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+  </div>
+  </div>
+    <div id="signin" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <center><h3>SIGN IN</h3>NOT REGISTERED? <a href="#signup" style="color: silver;">SIGN UP</a></center><br><br>
+                    <form action="home.html">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div id="hide">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="EMAIL" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="PASSWORD" required>
+                                </div>
+                                <p style="margin-left: 260px;" id="forgot">FORGOT PASSWORD?</p><br>
+                                <button type="submit" class="btn btn-default" style="width: 450px;background-color: #4A4444;color: white;">SIGN IN</button></div>
+                                <div id="show" style="display: none;">
+                                    <center>
+                                        <h4>FORGOT PASSWORD?</h4>
+                                        <p>Enter your email address and we will send you a link to reset your password.</p>
+                                    </center>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="EMAIL" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-default btn-lg" style="width: 250px;background-color: #4A4444;color: white;">EMAIL RESET LINK</button> <button type="reset" style="width: 130px;" class="btn btn-lg">CANCEL</button> 
+                                </div>
+                            </div>
+                            <div class="col-xs-1">
+                                <center><div style="height:70px;width: 1px;background-color: silver;"></div></center>
+                                <p style="margin-left: 10px;">OR</p>
+                                <center><div style="height:70px;width: 1px;background-color: silver;"></div></center>
+                            </div>
+                            <div class="col-xs-5" style="margin-top: 20px;">
+                                <div class="input-group-btn">
+                                    <center>
+                                        <a href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">
+                                            <button class="btn btn-danger btn-lg" type="button">
+                                                <i class="fa fa-google-plus"></i> SIGN IN WITH GOOGLE
+                                            </button>
+                                        </a>
+                                    </center>
+                                </div><br>
+                                <div class="input-group-btn">
+                                    <center>
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <button type="button" class="btn btn-info btn-lg" style="background-color: navy;" >
+                                                <i class="fa fa-facebook"></i> SIGN IN WITH FACEBOOK
+                                            </button>
+                                        </a>
+                                    </center>
+                                 </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+<div class="col-sm-6" style="background-color:lavender;height:519px;"> 
+  <h3>Billing Address</h3>
+<br><br><br>
+  <form action="home.html">
+
+      <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+     <div class="form-group">
+                    <input type="text" class="form-control" placeholder="FIRST NAME" required>
+                </div>
+
+
+    <div class="form-group">
+      <label for="email"><i class="fa fa-envelope"></i> Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+
+    <div class="form-group">
+       <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+      <input type="text" class="form-control" id="adr" placeholder="Enter address" name="adr" required>
+    </div>
+
+   <div class="form-group">
+       <label for="state"><i class="fa fa-state"></i> State</label>
+      <input type="text" class="form-control" id="state" placeholder="State" name="state" required>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="shipping" required> Shipping Address same as Billing</label>
+    </div>
+
+</form>
+<br>
+<br><br>
+<br>
+</div>
+
+
+
+
+<div class="col-sm-6" style="background-color:lavender;">
+
+  <h3>Payment</h3>
+  
+<form action="home.html">
+      <div class="form-group">
+         <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+             </div>
+
+    <div class="form-group">
+       <label for="name">Name on Card</label>
+      <input type="text" class="form-control" id="card" placeholder="" name="card" required>
+    </div>
+
+    <div class="form-group">
+      <label for="num">Credit Card Number</label>
+      <input type="digit" class="form-control"  id="num" placeholder="1111-2222-3333-4444" name="num" required>
+    </div>
+
+   <div class="form-group">
+       <label for="mth">Exp Month</label>
+      <input type="text" class="form-control"  id="mth" placeholder="month" name="mth" required>
+    </div>
+
+    <div class="form-group">
+       <label for="yr">Exp Year</label>
+      <input type="digit" class="form-control" id="yr"  placeholder="year" name="yr" required>
+    <br></div>
+  <button type="submit" class="btn btn-lg btn-warning">Submit</button> <a href="thank.html">Continue to Checkout</a>
+  </form>
+  <br><br>
+</div>
+
+ 
+
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+  <title>Thank You</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+<script>
+$(document).ready(function(){
+$("#welcome").slideUp(1800,function(){
+$("#home").fadeIn();
+});
+});
+</script>
+<style>
+#welcome{
+background-color:Black;
+height:800px;}
+a:link{
+text-decoration:none;
+}
+</style>
+
+</head>
+<body background="ten3.jpg" ng-app="">
+<div class="container-fluid" id="welcome"></div>
+<div id="home"style="display:none;">
+<body>
+<br><br>
+<center>
+<img src="ty.jpg"><br>
+<br>
+<h1 style="color:white;"><b>Visit Again !!</b></h1>
+ <b><div class="panel panel-info" style="width:70%">
+      <div class="panel-heading">Thanks for Placing Order !!</div>
+      <div class="panel-body">Your Transaction Has Been Successful !!!</div>
+    </div>
+</center>
+
+<div class="container">
+<div class="jumbotron">
+<center><h1><b>Write Your Reviews Here</b></h1></center>
+<div class="row">
+<table class="table table-bordered table-hovered" style="border:3px solid black">
+<tr>
+<td><div class="col-sm-6">
+<form name="form">
+<textarea cols="60" name="review" rows="5" required></textarea>
+</form>
+</div></td><td>
+<div class="col-sm-6">
+ <div class="media">
+    <div class="media-left">
+      <img src="avatar.png" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h2 class="media-heading">My Review</h2>
+    </div>
+  </div></td>
+</tr>
+</table>
+</div>
+<center><button type="submit" class="btn btn-info" data-toggle="modal" data-target="#myModal">Done</button></center>
+ <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Pay Your Visit Again !</h4>
+        </div>
+      <div class="modal-body">
+      <p>Your review Has been Submitted</p>
+     
+     </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default"><a href="trial.html">Home</a></button>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+   <div class="media">
+    <div class="media-left">
+      <img src="avatar.png" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Michael Doe</h4>
+      <p>I have been shopping online from many places. But your this website is the best website.This gives very tasty food.The most special thing is that the stuff is of very good quality.</p>
+    </div>
+  </div>
+  <hr>
+ <div class="media">
+    <div class="media-left">
+      <img src="avatar.png" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Mary Margrathan</h4>
+      <p>I had buy too many tasty food stuffs at your website and had encouraged many others to do so. With the passage of time I had experienced much of the things.Happy Enough !! </p>
+    </div>
+  </div>
+</div>
+
+  <hr>
+</div>
+</div>
+</body>
+</html>
